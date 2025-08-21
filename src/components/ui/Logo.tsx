@@ -23,7 +23,7 @@ export function Logo({ className = '', size = 'md' }: LogoProps) {
       aria-label="Solution 2 Properties - Home"
     >
       <Image
-        src="/logo.png"
+        src={`${process.env.NODE_ENV === 'production' ? '/Solution2Properties' : ''}/logo.png`}
         alt="Solution 2 Properties"
         width={currentSize.width}
         height={currentSize.height}
